@@ -627,6 +627,10 @@ video {
   height: 0.75rem;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -734,6 +738,18 @@ video {
   background-color: #f3be2eff;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -762,6 +778,11 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 .pl-12 {
