@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700&family=Fjalla+One&family=Poiret+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/app.css" />
+    <title>ListCoins</title>
+</head>
+
+<body>
+
+
+    <!--HEADER SECTION-->
+    <header class="py-4 shadow-sm bg-pink-50 lg:bg-text_white">
+        <div class="container flex items-center justify-between">
+
+            <a href="#" class="block w-32">
+                <img src="./images/verbose.png" alt="logo" class="w-full" />
+            </a>
+
+            <div class="w-full xl:max-w-xl lg:max-w-lg lg:flex relative hidden">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fas fa-search"></i>
+                </span>
+
+                <input class="pl-12 w-full border border-r-0 border-primelist py-3 px-3 rounded-l-md
+                focus:ring-primelist
+                " type="text" placeholder="Search">
+
+                <button type="submit" class="bg-officelist border
+                 border-officelist text-white px-8 font-medium
+                 rounded-r-md hover:bg-transparent hover:text-officelist 
+                 transition">Search</button>
+            </div>
+
+
+            <!---NAV ICONS-->
+            <div class="space-x-4 flex items-center">
+
+                <a href="#" class="block text-center text-gray-700 hover:text-primelist transition relative">
+                    <span class="absolute -right-0 -top-1 
+                        w-5 h-5 rounded-full
+                        flex items-center justify-center bg-primelist text-text_white
+                        text-xs 
+                        "> 5</span>
+
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+
+                    </div>
+                    <div class="text-sm font-poiret font-semibold leading-3">
+                        Wish List
+                    </div>
+                </a>
+                <a href="#" class="block text-center text-gray-700 hover:text-primelist transition relative">
+                    <span class="absolute -right-0 -top-1 
+                        w-5 h-5 rounded-full
+                        flex items-center justify-center bg-primelist text-text_white
+                        text-xs 
+                        "> 3</span>
+
+                    <div class="text-2xl">
+                        <i class="fas fa-shopping-bag"></i>
+
+                    </div>
+                    <div class="text-sm font-poiret font-semibold leading-3">
+                        Cart
+                    </div>
+                </a>
+                <a href="#" class="block text-center text-gray-700 hover:text-primelist transition relative">
+                    <div class="text-2xl">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="text-sm font-poiret font-semibold leading-3">
+                        Acount
+                    </div>
+                </a>
+            </div>
+
+            <!--END NAV ICONS-->
+
+        </div>
+    </header>
+    <!--END HEADER SECTION-->
+    <!--====================================================================-->
+    <!--Start Navbar-->
+    <nav class="bg-officelist hidden lg:block">
+        <div class="container">
+            <div class="flex">
+                <!--ALL categories-->
+                <div class="px-8 py-4 bg-primelist flex 
+                   items-center cursor-pointer group relative">
+
+                    <span class="text-text_white">
+                        <i class="fas fa-bars"></i>
+                    </span>
+
+                    <span class="text-text_white capitalize ml-2">
+                        all categories
+                    </span>
+
+
+
+                    <!--Dropdown Menu-->
+                    <div class="absolute left-0 top-full w-full bg-white shadow-md
+                    py-3 invisible opacity-0 group-hover:opacity-100 
+                    group-hover:visible transition duration-300 z-50 divide-y 
+                    divide-gray-300 divide-dashed
+                    ">
+
+                        <a href="#" class="px-6 py-3 flex 
+                       items-center hover:bg-gray-100 transition ease-out">
+                            <img src="./images/1.svg" class="w-5 h-3 object-contain" alt="" />
+                            <span class="ml-6 text-gray-500 text-sm font-semibold">
+                                Coins
+                            </span>
+                        </a>
+
+                        <a href="#" class="px-6 py-3 flex 
+                     items-center hover:bg-gray-100 transition ease-out">
+                            <img src="./images/2.svg" class="w-5 h-3 object-contain" alt="" />
+                            <span class="ml-6 text-gray-500 text-sm font-semibold">
+                                Coins
+                            </span>
+                        </a>
+
+                        <a href="#" class="px-6 py-3 flex 
+                   items-center hover:bg-gray-100 transition ease-out">
+                            <img src="./images/3.svg" class="w-5 h-3 object-contain" alt="" />
+                            <span class="ml-6 text-gray-500 text-sm font-semibold">
+                                Coins
+                            </span>
+                        </a>
+
+                        <a href="#" class="px-6 py-3 flex 
+                 items-center hover:bg-gray-100 transition ease-out">
+                            <img src="./images/4.svg" class="w-5 h-3 object-contain" alt="" />
+                            <span class="ml-6 text-gray-500 text-sm font-semibold">
+                                Coins
+                            </span>
+                        </a>
+
+                        <a href="#" class="px-6 py-3 flex 
+               items-center hover:bg-gray-100 transition ease-out">
+                            <img src="./images/5.svg" class="w-5 h-3 object-contain" alt="" />
+                            <span class="ml-6 text-gray-500 text-sm font-semibold">
+                                Coins
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+                <!--END Category-->
+                <div class="flex items-center justify-between flex-grow pl-12">
+                    <div class="flex items-center space-x-6 text-base capitalize font-poiret ">
+                        <a href="index.html" class="text-gray-200 font-bold hover:text-white transition">
+                            Home</a>
+
+                        <a href="shop.html" class="text-gray-200 font-bold hover:text-white transition">
+                            Shop</a>
+
+                        <a href="about.html" class="text-gray-200 font-bold hover:text-white transition">
+                            About us</a>
+
+
+                        <a href="contact.html" class="text-gray-200 font-bold hover:text-white transition">
+                            Contact us</a>
+
+                    </div>
+                    <a href="login.html" class="ml-auto text-gray-200 font-bold hover:text-white transition">
+                        Login/Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--End Navbar-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/fontawesome.min.js"
+        integrity="sha512-nKvEIGRKw2OQCR34yLfnWnvrOBxidLG9aK+vzsBxCZ/9ZxgcS4FrYcN+auWUTkCitTVZAt82InDKJ7x+QtKu6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
