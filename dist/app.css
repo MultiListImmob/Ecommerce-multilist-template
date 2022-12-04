@@ -600,6 +600,11 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -628,6 +633,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -638,6 +647,10 @@ video {
 
 .h-3 {
   height: 0.75rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .w-32 {
@@ -688,6 +701,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -721,6 +738,10 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
 }
 
 .rounded-l-md {
@@ -812,6 +833,11 @@ video {
 .py-36 {
   padding-top: 9rem;
   padding-bottom: 9rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pl-12 {
@@ -931,6 +957,11 @@ video {
   color: #f64d4bff;
 }
 
+.text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -967,6 +998,10 @@ video {
   display: none;
 }
 
+.hover\:border-primelist:hover {
+  border-color: #f3be2eff;
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -974,6 +1009,10 @@ video {
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primelist:hover {
+  background-color: #f3be2eff;
 }
 
 .hover\:text-officelist:hover {
@@ -1013,6 +1052,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1028,13 +1071,35 @@ video {
     display: flex;
   }
 
+  .lg\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .lg\:w-12 {
+    width: 3rem;
+  }
+
   .lg\:max-w-lg {
     max-width: 32rem;
+  }
+
+  .lg\:gap-6 {
+    gap: 1.5rem;
   }
 
   .lg\:bg-text_white {
     --tw-bg-opacity: 1;
     background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+  }
+
+  .lg\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .lg\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 
